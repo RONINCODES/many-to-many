@@ -1,0 +1,57 @@
+part 1
+1.
+Film                      Viewer
+title -String             name - String
+year - integer            age - integer
+viewer_id                 film_id
+
+Many to many relationship with foreign keys on each table
+
+2.
+Worker                  Shift
+name - string           day - date or datetime
+wage - float            time - time
+shift_id                worker_id
+
+3.
+chapter               Book                  Author                Reader
+title - integer       title - string        name - string         name - string
+book_id - integer     year - integer                              age - integer
+                      author_id                                   book_id
+
+Part 2
+1)
+Comic                   Issue                   Artist              Writer
+issue_id                comic_id                issue_id            issue_id
+artist_id                                       comic_id            comic_id
+
+2)
+instrument          Song              Setlist                   tourdate
+song_id            instrument_id      song_id                   setlist_id
+                                                                song_id
+
+3)
+gallery        exhibit          artwork           artist            curator
+curator_id     gallery_id       exhibit_id        artwork_id        gallery_id
+
+
+4)
+music piece         sheet music          instument
+instrument_id       music_piece_id       music_piece_id
+
+Part 3
+1)
+users             orders            dishes              restaurants
+orders_id         users_id          restautant_id       dish_id
+                                    order_id
+
+2)
+Airline     Flight             Schedule         Passenger         Crew
+flight_id   passenger_id       flight_id        flight_id         flight_id
+            crew_id            crew_id                            airline_id
+
+
+3) Artists       Tracks          Listeners
+   tracks_id     artists_id      artists_id
+
+   
